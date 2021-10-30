@@ -1,34 +1,3 @@
 
-<div class="container" role="main">
-  <app-new-post-entry></app-new-post-entry>
-  <div class="row" style="padding: 15px;" *ngFor="let post of posts">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">    
-      <div class="feed p-2">       
-        <div class="bg-white border mt-2">
-          <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
-            <div class="d-flex flex-row align-items-center feed-text px-2">
-              <img class="rounded-circle" src="https://i.imgur.com/aoKusnD.jpg" width="45" />
-                <div class="d-flex flex-column flex-wrap ml-2">
-                  <span class="font-weight-bold">Thomson ben</span>
-                  <span class="text-black-50 time">{{minutes}} minutes ago</span>
-                </div>
-            </div>
-            <div class="feed-icon px-2"><fa-icon style="color: gray;" [icon]="faEllipsisV">
-            </fa-icon></div>
-          </div>
-          <div class="p-2 px-3">
-              <span style="font-weight: bold;">{{post.title}}</span>
-          </div>
-          <div class="p-2 px-3">
-            <span>{{post.body}}</span>
-          </div>
-         <app-new-post-bottom-bar></app-new-post-bottom-bar>
-        </div>
-    </div>
-   
-    </div>
-    <div class="col-md-3"></div>
-  </div>
-</div>
+
 <router-outlet></router-outlet>

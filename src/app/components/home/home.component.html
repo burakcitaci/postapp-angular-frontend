@@ -1,0 +1,10 @@
+<div class="container" role="main">
+  <div class="row" style="padding: 15px;">
+    <div class="container" style="width: 50%;">
+      <app-new-post-entry></app-new-post-entry>
+      <div class="col-md-12" style="width: 100%;" *ngFor="let post of posts"> 
+        <app-post-view [currentPost]="post" (cardClickedEvent)="cardClicked($event)"></app-post-view>
+      </div>
+    </div>
+  </div>
+</div>
